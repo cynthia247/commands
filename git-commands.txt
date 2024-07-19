@@ -1,0 +1,40 @@
+1. To check the status of your git repo
+
+    git status
+    
+2. If 'git status' indicated that there are changes but they are not staged for commit, add them to the staging area
+
+    git add .
+
+    Or, specify the files individually
+    
+    git add <file_name>
+
+3. After staging the changes, commit them:
+
+    git commit -m "Your commit message"
+
+4. After commiting push your changes    
+
+    git push
+
+5. To view commit log
+
+    git log --oneline
+
+    To exit from the log
+    press 'q'
+
+6. You will see a list of commit. Find the commit you want to restore. Identify the commit hash (e.g., d4e5f6g) before the reset. Once you have identified the commit hash you want to restore, you can reset to that commit.
+
+    git reset --hard d4e5f6g
+
+    Replace d4e5f6g with the actual commit hash from your reflog.
+
+7. Check your repository status by git status again
+
+8. There is another command
+
+    git reset --hard HEAD~1
+    
+    Adjust HEAD~1 to the number of commits you want to undo
